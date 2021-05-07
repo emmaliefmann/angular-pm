@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'pm-product-list',
   templateUrl: './product-list.component.html',
@@ -10,7 +11,8 @@ export class ProductListComponent implements OnInit {
   imageWidth:number =50;
   imageMargin:number = 2;
   showImage: boolean = false; 
-  pageTitle: string = "Product List";
+  pageTitle: string = 'Product List';
+  listFilter: string ='cart';
   products:any[] = [{
     "productId": 1,
     "productName": "Leaf Rake",
